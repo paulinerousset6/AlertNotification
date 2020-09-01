@@ -73,7 +73,7 @@ namespace AlertNotificationSystem
                     break;
 
                 TimerCallback callback = new TimerCallback(Tick);
-                aTimer = new System.Threading.Timer(callback, null, AcknowledgmentDelay, AcknowledgmentDelay);
+                aTimer = new System.Threading.Timer(callback, null, 0, AcknowledgmentDelay);
             }
 
             return CurrentLevels;
